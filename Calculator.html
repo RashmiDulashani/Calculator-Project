@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="display">
+            <input type="text" readonly id="textscreen" value="0">
+        </div>
+
+        <div class="keys">
+            <input type="button" value="C" class="button operators" onclick="reset()">
+            <input type="button" value="Del" class="button operators" onclick="del()">
+            <input type="button" value="%" class="button operators" onclick="per()">
+            <input type="button" value="/" class="button operators" onclick="div()"> <br>
+
+            <input type="button" value="7" class="button" onclick="key(7)">
+            <input type="button" value="8" class="button" onclick="key(8)">
+            <input type="button" value="9" class="button" onclick="key(9)">
+            <input type="button" value="*" class="button operators" onclick="multi()"> <br>
+
+            <input type="button" value="4" class="button" onclick="key(4)">
+            <input type="button" value="5" class="button" onclick="key(5)">
+            <input type="button" value="6" class="button" onclick="key(6)">
+            <input type="button" value="-" class="button operators" onclick="sub()"> <br>
+
+            <input type="button" value="1" class="button" onclick="key(1)">
+            <input type="button" value="2" class="button" onclick="key(2)">
+            <input type="button" value="3" class="button" onclick="key(3)">
+            <input type="button" value="+" class="button operators" onclick="add()"> <br>
+
+            <input type="button" value="0" class="button" onclick="key(0)">
+            <input type="button" value="." class="button" onclick="key('.')" >
+            <input type="button" value="=" class="button orange" onclick="eq()">
+
+        </div>
+    </div>
+
+    <script src="Calculator.js"> </script>
+    
+</body>
+</html>
